@@ -1,0 +1,61 @@
+@use "../global/variables" as vars;
+
+.steps-section {
+  width: 100%;
+  margin-top: 8rem;
+}
+
+.text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  h3 {
+    font-size: 2.2rem;
+    span {
+      color: vars.$logo-color;
+    }
+    margin-bottom: 1rem;
+  }
+  h1 {
+    font-size: 3.3rem;
+    span {
+      color: vars.$logo-color;
+    }
+  }
+}
+
+.steps-container {
+  display: grid;
+  margin-top: 5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  padding: 0 4rem;
+}
+
+.one-step-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.one-step-image {
+  width: 120px;
+}
+
+.one-step-text-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin-top: 2rem;
+  h1 {
+    font-size: 1.6rem;
+  }
+  p {
+    margin-top: 1rem;
+    color: vars.$description-font-color;
+    font-size: 0.95rem;
+  }
+}

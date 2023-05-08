@@ -1,0 +1,59 @@
+.steps-section {
+  width: 100%;
+  margin-top: 8rem;
+}
+
+.text-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.text-container h3 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+.text-container h3 span {
+  color: #009cff;
+}
+.text-container h1 {
+  font-size: 3.3rem;
+}
+.text-container h1 span {
+  color: #009cff;
+}
+
+.steps-container {
+  display: grid;
+  margin-top: 5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  padding: 0 4rem;
+}
+
+.one-step-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.one-step-image {
+  width: 120px;
+}
+
+.one-step-text-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 80%;
+  margin-top: 2rem;
+}
+.one-step-text-container h1 {
+  font-size: 1.6rem;
+}
+.one-step-text-container p {
+  margin-top: 1rem;
+  color: #706f7b;
+  font-size: 0.95rem;
+}

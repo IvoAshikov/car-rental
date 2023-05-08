@@ -1,0 +1,20 @@
+@use "../global/variables" as vars;
+
+.booking-section {
+  position: relative;
+  z-index: 3;
+  padding: 2rem 4rem;
+}
+
+.booking-container {
+  background: url("../../images/booking-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 2rem 3rem;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.3);
+  h2 {
+    color: vars.$default-font-color;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}

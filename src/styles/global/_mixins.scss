@@ -1,6 +1,6 @@
 @mixin button-style($background-color, $text-color) {
   background-color: $background-color;
-  border: none;
+  border: 2px solid transparent;
   color: $text-color;
   padding: 1rem 2rem;
   font-weight: 500;
