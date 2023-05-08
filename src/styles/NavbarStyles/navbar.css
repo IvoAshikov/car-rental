@@ -1,0 +1,67 @@
+.nav-container {
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+
+nav {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+nav .logo-container {
+  cursor: pointer;
+}
+nav .logo-container img {
+  width: 8rem;
+  position: relative;
+  z-index: 3;
+  background-color: transparent;
+}
+
+.pages-container ul {
+  display: flex;
+  gap: 2rem;
+}
+.pages-container ul li {
+  list-style-type: none;
+  color: #010103;
+  font-weight: 500;
+  font-size: 1.2rem;
+  position: relative;
+  z-index: 3;
+  background-color: transparent;
+}
+
+.account-container {
+  display: flex;
+  gap: 1.5rem;
+  position: relative;
+  z-index: 3;
+  background-color: transparent;
+}
+.account-container .register {
+  background-color: #009cff;
+  border: none;
+  color: #f3f3f3;
+  padding: 1rem 2rem;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  box-shadow: 0 10px 15px 0 #009cff;
+  cursor: pointer;
+}
+.account-container .sign-in {
+  background-color: transparent;
+  border: none;
+  color: #010103;
+  padding: 1rem 2rem;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  box-shadow: 0 10px 15px 0 transparent;
+  cursor: pointer;
+}

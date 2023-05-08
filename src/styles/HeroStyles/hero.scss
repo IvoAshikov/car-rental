@@ -1,0 +1,68 @@
+@use "../global/variables" as vars;
+@use "../global/mixins" as mixin;
+
+.hero-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+}
+
+.background-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100vh;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 3;
+  background-color: transparent;
+  width: 40%;
+  margin-top: 3rem;
+  margin-left: 2.5rem;
+  color: vars.$default-font-color;
+  h1 {
+    background-color: transparent;
+    font-size: 4.5rem;
+    span {
+      color: vars.$logo-color;
+      background-color: transparent;
+    }
+  }
+  p {
+    background-color: transparent;
+    font-size: 1rem;
+    margin-top: 1.2rem;
+    line-height: 30px;
+    color: #706f7b;
+  }
+}
+
+.hero-pic-container {
+  position: relative;
+  z-index: 2;
+  background-color: transparent;
+  width: 60%;
+  img {
+    background-color: transparent;
+    width: 100%;
+  }
+}
+
+.hero-button-container {
+  display: flex;
+  gap: 4rem;
+  background-color: transparent;
+  margin-top: 2rem;
+  .hero-book {
+    @include mixin.button-style(vars.$logo-color, vars.$white-font-color);
+  }
+  .hero-about {
+    @include mixin.button-style(vars.$default-font-color, vars.$white-font-color);
+  }
+}
