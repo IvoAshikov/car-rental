@@ -1,0 +1,26 @@
+.car-description-container {
+  width: 30%;
+}
+.car-description-container table {
+  border-collapse: collapse;
+  width: 90%;
+  margin-left: 2rem;
+}
+.car-description-container table td {
+  border: 2px solid #706f7b;
+  padding: 0.5rem 1.5rem;
+  text-align: center;
+}
+
+.rent-price {
+  height: 50px;
+  background-color: #009cff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #f3f3f3;
+  font-size: 2rem;
+  width: 90%;
+  margin-left: 2rem;
+  font-weight: 900;
+}

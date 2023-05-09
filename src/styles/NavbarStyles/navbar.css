@@ -40,24 +40,24 @@ nav .logo-container img {
   z-index: 3;
 }
 .account-container .register {
+  box-shadow: 0 10px 15px 0 #009cff;
   background-color: #009cff;
-  border: 2px solid transparent;
   color: #f3f3f3;
+  border: 2px solid transparent;
   padding: 1rem 2rem;
   font-weight: 500;
   border-radius: 5px;
   font-size: 1.1rem;
-  box-shadow: 0 10px 15px 0 #009cff;
   cursor: pointer;
 }
 .account-container .sign-in {
+  box-shadow: 0 10px 15px 0 transparent;
   background-color: transparent;
-  border: 2px solid transparent;
   color: #010103;
+  border: 2px solid transparent;
   padding: 1rem 2rem;
   font-weight: 500;
   border-radius: 5px;
   font-size: 1.1rem;
-  box-shadow: 0 10px 15px 0 transparent;
   cursor: pointer;
 }

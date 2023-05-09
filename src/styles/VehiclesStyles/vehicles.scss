@@ -1,0 +1,97 @@
+@use "../global/variables" as vars;
+@use "../global/mixins" as mixin;
+
+.vehicles-section {
+  margin-top: 8rem;
+  padding: 0 3rem;
+  width: 100%;
+}
+
+.vehicles-text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+  }
+  p {
+    text-align: center;
+    width: 40%;
+    color: vars.$description-font-color;
+    line-height: 23px;
+  }
+}
+
+.available-vehicles-container {
+  display: flex;
+  margin-top: 4rem;
+}
+
+.mouse-scroll {
+  position: absolute;
+  left: 45%;
+  bottom: 20px;
+}
+
+.mouse-round {
+  height: 30px;
+  width: 20px;
+  border: 2px solid vars.$logo-color;
+  border-radius: 10px;
+  .mouse-wheel {
+    width: 2px;
+    height: 7px;
+    background-color: vars.$logo-color;
+    margin: 5px auto;
+    border-radius: 25px;
+    animation: mouse-wheel-anim 1.2s ease infinite;
+    @keyframes mouse-wheel-anim {
+      0% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(6px);
+      }
+    }
+  }
+}
+
+.vehicle-pick-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 20%;
+  max-height: 25rem;
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  button {
+    @include mixin.car-button();
+  }
+}
+
+.pick-button {
+  background-color: #e9e9e9;
+}
+
+.active-pick-button {
+  background-color: vars.$logo-color;
+  color: vars.$white-font-color;
+}
+
+.car-picture-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 100%;
+  }
+}

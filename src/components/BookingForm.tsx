@@ -20,7 +20,7 @@ function BookingForm() {
             <option>Volkswagen Golf 7</option>
             <option>Opel Astra</option>
             <option>Audi A3</option>
-            <option>Kia Seed</option>
+            <option>Kia Ceed</option>
             <option>Citroen C3</option>
             <option>Volkswagen T-Roc</option>
             <option>Volkswagen Touareg</option>

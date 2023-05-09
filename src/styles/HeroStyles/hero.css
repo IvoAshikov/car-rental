@@ -49,25 +49,25 @@
   margin-top: 2rem;
 }
 .hero-button-container .hero-book {
+  box-shadow: 0 10px 15px 0 #009cff;
   background-color: #009cff;
-  border: 2px solid transparent;
   color: #f3f3f3;
+  border: 2px solid transparent;
   padding: 1rem 2rem;
   font-weight: 500;
   border-radius: 5px;
   font-size: 1.1rem;
-  box-shadow: 0 10px 15px 0 #009cff;
   cursor: pointer;
 }
 .hero-button-container .hero-about {
+  box-shadow: 0 10px 15px 0 #010103;
   background-color: #010103;
-  border: 2px solid transparent;
   color: #f3f3f3;
+  border: 2px solid transparent;
   padding: 1rem 2rem;
   font-weight: 500;
   border-radius: 5px;
   font-size: 1.1rem;
-  box-shadow: 0 10px 15px 0 #010103;
   cursor: pointer;
 }
 .hero-button-container .hero-about:hover {

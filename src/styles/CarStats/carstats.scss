@@ -1,0 +1,28 @@
+@use "../global/variables" as vars;
+
+.car-description-container {
+  width: 30%;
+  table {
+    border-collapse: collapse;
+    width: 90%;
+    margin-left: 2rem;
+    td {
+      border: 2px solid vars.$description-font-color;
+      padding: 0.5rem 1.5rem;
+      text-align: center;
+    }
+  }
+}
+
+.rent-price {
+  height: 50px;
+  background-color: vars.$logo-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: vars.$white-font-color;
+  font-size: 2rem;
+  width: 90%;
+  margin-left: 2rem;
+  font-weight: 900;
+}
