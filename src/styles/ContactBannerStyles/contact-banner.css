@@ -1,0 +1,39 @@
+.contact-banner-section {
+  width: 100%;
+  height: 200px;
+  background: url("../../images/contact-banner.jpg");
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8rem 0;
+  position: relative;
+}
+
+.contact-banner-text {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 4;
+}
+.contact-banner-text p {
+  font-size: 2.5rem;
+  color: #f3f3f3;
+  font-weight: 900;
+}
+.contact-banner-text span {
+  font-size: 2.5rem;
+  color: #009cff;
+  margin-left: 2rem;
+  font-weight: 700;
+}
+
+.image-overlay {
+  background-color: #2d2d2d;
+  height: 100%;
+  opacity: 0.9;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

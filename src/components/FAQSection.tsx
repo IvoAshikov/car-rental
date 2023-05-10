@@ -7,7 +7,7 @@ function FAQSection() {
   const [faqActive, setFaqActive] = useState<string>("QNum1");
   return (
     <>
-      <section className="faq-section">
+      <section className="faq-section" id="faq">
         <div className="faq-text-container">
           <h1>Frequently Asked Quesitons</h1>
           <p>Frequently Asked Questions About the Car Rental Booking Process on Our Website: Answers to Common Concerns and Inquiries.</p>

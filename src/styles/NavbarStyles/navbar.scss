@@ -35,6 +35,11 @@ nav {
       font-size: 1.2rem;
       position: relative;
       z-index: 3;
+      cursor: pointer;
+      &:hover {
+        color: vars.$logo-color;
+        transition: all 0.3s ease;
+      }
     }
   }
 }

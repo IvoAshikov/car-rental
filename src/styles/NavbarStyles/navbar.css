@@ -31,6 +31,11 @@ nav .logo-container img {
   font-size: 1.2rem;
   position: relative;
   z-index: 3;
+  cursor: pointer;
+}
+.pages-container ul li:hover {
+  color: #009cff;
+  transition: all 0.3s ease;
 }
 
 .account-container {

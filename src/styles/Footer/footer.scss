@@ -8,7 +8,7 @@ footer {
   padding: 2rem 4rem;
 }
 
-.logo-container {
+.footer-logo-container {
   width: 100%;
   display: flex;
   align-items: center;
@@ -31,6 +31,10 @@ footer {
   .phone,
   .email {
     font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
     &:hover {
       color: vars.$logo-color;
       cursor: pointer;

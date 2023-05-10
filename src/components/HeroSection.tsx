@@ -2,7 +2,7 @@ import "../styles/HeroStyles/hero.css";
 function HeroSection() {
   return (
     <>
-      <section className="hero-section">
+      <section className="hero-section" id="hero">
         <img src={require("../images/hero-background.jpg")} className="background-image" />
         <div className="hero-text">
           <h1>

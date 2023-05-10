@@ -3,7 +3,7 @@ import "../styles/StepsStyles/steps.css";
 function StepsSection() {
   return (
     <>
-      <section className="steps-section">
+      <section className="steps-section" id="steps">
         <div className="text-container">
           <h3>
             Our <span>3-step</span> process

@@ -3,7 +3,7 @@ import "../styles/NavbarStyles/navbar.css";
 function Navbar() {
   return (
     <>
-      <div className="nav-container">
+      <div className="nav-container" id="nav">
         <nav>
           <div className="logo-container">
             <img src={require("../images/logo.png")} />

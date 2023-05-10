@@ -1,0 +1,68 @@
+@use "../global/variables" as vars;
+@use "../global/mixins" as mixin;
+
+.car-info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.car-image-container {
+  width: 100%;
+  height: 21rem;
+  img {
+    width: 100%;
+    height: 21rem;
+  }
+}
+
+.car-specs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem 2.5rem;
+  border: 1px solid #d5d5d5;
+  border-top: none;
+  .car-name-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h2 {
+      font-size: 1.7rem;
+      font-weight: 700;
+    }
+    p {
+      font-size: 1.3rem;
+      span {
+        color: vars.$logo-color;
+        margin-right: 0.5rem;
+      }
+    }
+  }
+  button {
+    @include mixin.button-style(vars.$logo-color, vars.$white-font-color, vars.$button-hover-color);
+    margin: 0.5rem 0;
+  }
+}
+
+.car-info-one,
+.car-info-two {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  p {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.3rem;
+    color: vars.$description-font-color;
+    .car-icon-one,
+    .car-icon-two {
+      color: vars.$logo-color;
+    }
+  }
+}
+
+.car-info-two {
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #d5d5d5;
+}

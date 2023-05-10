@@ -11,8 +11,9 @@ interface CarData {
   transmission: string;
   horsepower: string;
   consumption: string;
-  price: string;
+  price: number;
   image: any;
+  imageNEW: any;
 }
 
 interface CarStats {

@@ -7,7 +7,7 @@ function Footer() {
     <>
       <footer>
         <div className="footer-left">
-          <div className="logo-container">
+          <div className="footer-logo-container">
             <img src={require("../images/logo.png")} />
           </div>
         </div>

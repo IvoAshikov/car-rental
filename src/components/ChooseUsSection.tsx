@@ -7,7 +7,7 @@ import NoHiddenFees from "../images/no-hidden-fees.png";
 function ChooseUsSection() {
   return (
     <>
-      <section className="choose-section">
+      <section className="choose-section" id="choose-us">
         <div className="choose-img-container">
           <img src={require("../images/three-cars.png")} />
         </div>

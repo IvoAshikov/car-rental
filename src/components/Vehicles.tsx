@@ -8,7 +8,7 @@ function Vehicles() {
 
   return (
     <>
-      <section className="vehicles-section">
+      <section className="vehicles-section" id="vehicles">
         <div className="vehicles-text">
           <h1>Browse through our available vehicles</h1>
           <p>Explore our selection of exceptional rental vehicles and choose the perfect one for your next business trip or adventure.</p>
