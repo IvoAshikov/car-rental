@@ -10,6 +10,9 @@
   background-repeat: no-repeat;
   background-position: bottom right;
   margin: 8rem 0;
+  @media (max-width: 768px) {
+    padding: 0 1rem;
+  }
 }
 
 .faq-text-container {
@@ -18,9 +21,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
   h1 {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
+    @media (max-width: 768px) {
+      font-size: 2rem;
+      text-align: center;
+    }
   }
   p {
     color: vars.$description-font-color;
@@ -35,10 +45,16 @@
   align-items: center;
   justify-content: center;
   margin-top: 4rem;
+  @media (max-width: 768px) {
+    padding: 0;
+  }
   .one-question-container {
     background-color: #fff;
     box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.2);
     width: 70%;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
   .q {
     font-size: 1.25rem;

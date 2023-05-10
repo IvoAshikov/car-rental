@@ -1,17 +1,47 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../styles/BookingFormStyles/booking-form.css";
-import { faCar, faLocationDot, faCalendarDays } from "@fortawesome/free-solid-svg-icons";
+import { faCar, faLocationDot, faCalendarDays, faAt } from "@fortawesome/free-solid-svg-icons";
+import React, { useState } from "react";
 
 function BookingForm() {
+  const [areEmpty, setAreEmpty] = useState<string>("");
+  const [formState, setFormState] = useState<any>({
+    car: "",
+    pickupLocation: "",
+    dropoffLocation: "",
+    pickupDate: "",
+    dropoffDate: "",
+    email: "",
+  });
+
+  const handleSubmit = (event: any) => {
+    event.preventDefault();
+    if (formState.car === "" || formState.pickupLocation === "" || formState.dropoffLocation === "" || formState.pickupDate === "" || formState.dropoffDate === "" || formState.email === "") {
+      setAreEmpty("Fields Are Empty");
+    } else {
+      setAreEmpty("Booking Complete");
+    }
+  };
+
   return (
     <>
+      {areEmpty === "Fields Are Empty" && (
+        <div className="empty">
+          <p>All fields are required!</p>
+        </div>
+      )}
+      {areEmpty === "Booking Complete" && (
+        <div className="ready">
+          <p>Please check your email to confirm your booking!</p>
+        </div>
+      )}
       <form className="booking-form">
         <div className="one-part-container">
           <label>
             <FontAwesomeIcon icon={faCar} className="icon" />
             Select your dream car<span>*</span>
           </label>
-          <select required>
+          <select required onChange={(e) => setFormState({ ...formState, car: e.target.value })}>
             <option selected disabled hidden>
               Select your dream car
             </option>
@@ -32,7 +62,7 @@ function BookingForm() {
             <FontAwesomeIcon icon={faLocationDot} className="icon" />
             Pick-up Location<span>*</span>
           </label>
-          <select required>
+          <select required onChange={(e) => setFormState({ ...formState, pickupLocation: e.target.value })}>
             <option selected disabled hidden>
               Select your pick-up location
             </option>
@@ -49,7 +79,7 @@ function BookingForm() {
             <FontAwesomeIcon icon={faLocationDot} className="icon" />
             Drop-off Location<span>*</span>
           </label>
-          <select required>
+          <select required onChange={(e) => setFormState({ ...formState, dropoffLocation: e.target.value })}>
             <option selected disabled hidden>
               Select your drop-off location
             </option>
@@ -68,7 +98,7 @@ function BookingForm() {
             Pick-up Date
             <span>*</span>
           </label>
-          <input type="date" />
+          <input type="date" required onChange={(e) => setFormState({ ...formState, pickupDate: e.target.value })} />
         </div>
         <div className="one-part-container">
           <label>
@@ -76,10 +106,18 @@ function BookingForm() {
             Drop-off Date
             <span>*</span>
           </label>
-          <input type="date" />
+          <input type="date" required onChange={(e) => setFormState({ ...formState, dropoffDate: e.target.value })} />
+        </div>
+        <div className="one-part-container">
+          <label>
+            <FontAwesomeIcon icon={faAt} className="icon" />
+            Email
+            <span>*</span>
+          </label>
+          <input type="text" placeholder="johndoe@yourmail.com" required onChange={(e) => setFormState({ ...formState, email: e.target.value })} />
         </div>
         <div className="booking-button-container">
-          <button>Rent The Car</button>
+          <button onClick={handleSubmit}>Rent The Car</button>
         </div>
       </form>
     </>

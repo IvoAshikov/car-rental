@@ -1,8 +1,19 @@
 .booking-form {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto auto auto auto;
   gap: 2rem;
+}
+@media (max-width: 768px) {
+  .booking-form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.booking-form > *:nth-child(7) {
+  grid-column: 2/3;
+  grid-row: 4/5;
 }
 
 .one-part-container {
@@ -66,4 +77,34 @@
   box-shadow: none;
   padding: 0.6rem;
   border-radius: 3px;
+}
+.booking-button-container button:hover {
+  background-color: #0288db;
+  box-shadow: 0 10px 15px 0 #0288db;
+  transition: all 1s ease;
+}
+.booking-button-container button:hover {
+  box-shadow: none;
+}
+
+.empty {
+  background-color: #f8d7da;
+  font-size: 1.2rem;
+  color: #721c24;
+  padding: 0.5rem 3rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  border: 1px solid transparent;
+}
+
+.ready {
+  background-color: #c3fabe;
+  font-size: 1.2rem;
+  color: #2a6817;
+  padding: 0.75rem 3rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
+  border: 1px solid transparent;
+  font-weight: 700;
 }

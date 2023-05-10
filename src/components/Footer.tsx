@@ -1,15 +1,18 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../styles/Footer/footer.css";
 import { faAt, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <>
       <footer>
         <div className="footer-left">
-          <div className="footer-logo-container">
-            <img src={require("../images/logo.png")} />
-          </div>
+          <Link to="/">
+            <div className="footer-logo-container">
+              <img src={require("../images/logo.png")} />
+            </div>
+          </Link>
         </div>
         <div className="footer-center">
           <h2>Get In Contact With Us</h2>

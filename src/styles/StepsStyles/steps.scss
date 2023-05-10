@@ -12,6 +12,9 @@
   flex-direction: column;
   h3 {
     font-size: 2.2rem;
+    @media (max-width: 768px) {
+      font-size: 1.6rem;
+    }
     span {
       color: vars.$logo-color;
     }
@@ -19,6 +22,9 @@
   }
   h1 {
     font-size: 3.3rem;
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
     span {
       color: vars.$logo-color;
     }
@@ -31,12 +37,19 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto;
   padding: 0 4rem;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .one-step-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (max-width: 768px) {
+    margin-bottom: 2rem;
+  }
 }
 
 .one-step-image {

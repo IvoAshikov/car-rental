@@ -13,11 +13,21 @@
   font-size: 2.2rem;
   margin-bottom: 1rem;
 }
+@media (max-width: 768px) {
+  .text-container h3 {
+    font-size: 1.6rem;
+  }
+}
 .text-container h3 span {
   color: #009cff;
 }
 .text-container h1 {
   font-size: 3.3rem;
+}
+@media (max-width: 768px) {
+  .text-container h1 {
+    font-size: 2rem;
+  }
 }
 .text-container h1 span {
   color: #009cff;
@@ -30,11 +40,22 @@
   grid-template-rows: auto auto auto;
   padding: 0 4rem;
 }
+@media (max-width: 768px) {
+  .steps-container {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .one-step-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (max-width: 768px) {
+  .one-step-container {
+    margin-bottom: 2rem;
+  }
 }
 
 .one-step-image {

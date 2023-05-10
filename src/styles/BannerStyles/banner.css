@@ -8,15 +8,31 @@
   justify-content: center;
   padding: 5rem 3rem;
 }
+@media (max-width: 768px) {
+  .banner-section {
+    padding: 2rem;
+  }
+}
 .banner-section h1 {
   color: #f3f3f3;
   font-size: 3.5rem;
   font-weight: 700;
 }
+@media (max-width: 768px) {
+  .banner-section h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
 .banner-section p {
   color: #f3f3f3;
   font-size: 1.5rem;
   margin-top: 1.5rem;
+}
+@media (max-width: 768px) {
+  .banner-section p {
+    text-align: center;
+  }
 }
 .banner-section p span {
   color: #009cff;

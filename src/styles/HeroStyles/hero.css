@@ -2,6 +2,11 @@
   width: 100%;
   display: flex;
 }
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+  }
+}
 
 .background-image {
   position: absolute;
@@ -9,6 +14,11 @@
   right: 0;
   z-index: 1;
   width: 100%;
+}
+@media (max-width: 768px) {
+  .background-image {
+    display: none;
+  }
 }
 
 .hero-text {
@@ -21,8 +31,22 @@
   margin-left: 2.5rem;
   color: #010103;
 }
+@media (max-width: 768px) {
+  .hero-text {
+    width: 100%;
+    margin: 0;
+    margin-top: 3rem;
+    padding: 0 1rem;
+  }
+}
 .hero-text h1 {
   font-size: 4.5rem;
+}
+@media (max-width: 768px) {
+  .hero-text h1 {
+    font-size: 1.9rem;
+    text-align: center;
+  }
 }
 .hero-text h1 span {
   color: #009cff;
@@ -33,6 +57,11 @@
   line-height: 30px;
   color: #706f7b;
 }
+@media (max-width: 768px) {
+  .hero-text p {
+    text-align: center;
+  }
+}
 
 .hero-pic-container {
   position: relative;
@@ -42,11 +71,23 @@
 .hero-pic-container img {
   width: 100%;
 }
+@media (max-width: 768px) {
+  .hero-pic-container img {
+    display: none;
+  }
+}
 
 .hero-button-container {
   display: flex;
   gap: 4rem;
   margin-top: 2rem;
+}
+@media (max-width: 768px) {
+  .hero-button-container {
+    flex-direction: column;
+    width: 100%;
+    gap: 1.5rem;
+  }
 }
 .hero-button-container .hero-book {
   box-shadow: 0 10px 15px 0 #009cff;
@@ -64,6 +105,11 @@
   box-shadow: 0 10px 15px 0 #0288db;
   transition: all 1s ease;
 }
+@media (max-width: 768px) {
+  .hero-button-container .hero-book {
+    width: 100%;
+  }
+}
 .hero-button-container .hero-about {
   box-shadow: 0 10px 15px 0 #010103;
   background-color: #010103;
@@ -79,6 +125,11 @@
   background-color: #f3f3f3;
   box-shadow: 0 10px 15px 0 #f3f3f3;
   transition: all 1s ease;
+}
+@media (max-width: 768px) {
+  .hero-button-container .hero-about {
+    width: 100%;
+  }
 }
 .hero-button-container .hero-about:hover {
   color: #010103;

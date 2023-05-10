@@ -3,6 +3,11 @@
   z-index: 3;
   padding: 2rem 4rem;
 }
+@media (max-width: 768px) {
+  .booking-section {
+    padding: 2rem 1rem;
+  }
+}
 
 .booking-container {
   background: url("../../images/booking-bg.jpg");

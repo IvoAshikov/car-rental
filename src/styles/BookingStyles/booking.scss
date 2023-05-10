@@ -4,6 +4,9 @@
   position: relative;
   z-index: 3;
   padding: 2rem 4rem;
+  @media (max-width: 768px) {
+    padding: 2rem 1rem;
+  }
 }
 
 .booking-container {
