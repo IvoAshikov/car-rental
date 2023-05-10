@@ -9,6 +9,9 @@
   justify-content: center;
   margin: 8rem 0;
   position: relative;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 }
 
 .contact-banner-text {
@@ -17,16 +20,28 @@
   align-items: center;
   justify-content: center;
   z-index: 4;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
   p {
     font-size: 2.5rem;
     color: vars.$white-font-color;
     font-weight: 900;
+    @media (max-width: 768px) {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
   }
   span {
     font-size: 2.5rem;
     color: vars.$logo-color;
     margin-left: 2rem;
     font-weight: 700;
+    @media (max-width: 768px) {
+      font-size: 1.8rem;
+      margin-left: 0;
+    }
   }
 }
 

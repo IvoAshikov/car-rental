@@ -49,10 +49,21 @@
   padding: 0 12rem;
   display: flex;
   gap: 2rem;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
   .about-company-image-container {
+    @media (max-width: 768px) {
+      width: 100%;
+    }
     img {
       height: 30rem;
       width: 30rem;
+      @media (max-width: 768px) {
+        width: 100%;
+        height: 100%;
+      }
     }
   }
   .about-text-container {

@@ -4,6 +4,8 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: relative;
+  z-index: 999999;
 }
 
 .logo-container {
@@ -17,6 +19,7 @@
 
 .more-icon {
   height: 25px;
+  z-index: 99999;
 }
 
 .close-sidebar-container {
@@ -60,6 +63,6 @@
 }
 
 .open {
-  left: 0;
+  left: 0%;
   transition: all 1s ease;
 }

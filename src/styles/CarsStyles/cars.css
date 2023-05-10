@@ -46,6 +46,13 @@
   gap: 3rem;
   padding: 0 6rem;
 }
+@media (max-width: 768px) {
+  .cars-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+}
 
 .cars-container > *:nth-child(10) {
   grid-column: 2/3;

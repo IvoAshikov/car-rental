@@ -46,25 +46,61 @@
   padding: 0 3rem;
   display: flex;
 }
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+}
 
 .contact-text {
   width: 50%;
 }
+@media (max-width: 768px) {
+  .contact-text {
+    width: 100%;
+  }
+}
 .contact-text h1 {
   font-size: 4rem;
+}
+@media (max-width: 768px) {
+  .contact-text h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
 }
 .contact-text p {
   font-size: 1.3rem;
   color: #706f7b;
   margin: 2rem 0;
 }
+@media (max-width: 768px) {
+  .contact-text p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
 .contact-text .contact-options {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
+@media (max-width: 768px) {
+  .contact-text .contact-options {
+    gap: 0;
+  }
+}
 .contact-text .contact-options span {
   font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+  .contact-text .contact-options span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
 }
 .contact-text .contact-options span:hover {
   color: #009cff;
@@ -78,17 +114,32 @@
   width: 30rem;
   max-width: 30rem;
 }
+@media (max-width: 768px) {
+  .contact-text .helper-container {
+    width: 100%;
+  }
+}
 
 .contact-inputs {
   width: 50%;
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 768px) {
+  .contact-inputs {
+    width: 100%;
+  }
+}
 .contact-inputs form {
   display: flex;
   flex-direction: column;
   width: 30rem;
   max-width: 30rem;
+}
+@media (max-width: 768px) {
+  .contact-inputs form {
+    width: 100%;
+  }
 }
 .contact-inputs input {
   outline: none;
@@ -99,10 +150,20 @@
   width: 25rem;
   margin-bottom: 2.5rem;
 }
+@media (max-width: 768px) {
+  .contact-inputs input {
+    width: 100%;
+  }
+}
 .contact-inputs label {
   font-size: 1.1rem;
   font-weight: 700;
   margin-bottom: 0.75rem;
+}
+@media (max-width: 768px) {
+  .contact-inputs label {
+    width: 100%;
+  }
 }
 .contact-inputs label span {
   color: #009cff;
@@ -119,8 +180,18 @@
   outline: none;
   padding: 1rem 2rem;
 }
+@media (max-width: 768px) {
+  .contact-inputs textarea {
+    width: 100%;
+  }
+}
 .contact-inputs .helper-container {
   margin-left: auto;
+}
+@media (max-width: 768px) {
+  .contact-inputs .helper-container {
+    width: 100%;
+  }
 }
 .contact-inputs button {
   box-shadow: 0 10px 15px 0 #009cff;
@@ -140,6 +211,11 @@
   background-color: #0288db;
   box-shadow: 0 10px 15px 0 #0288db;
   transition: all 1s ease;
+}
+@media (max-width: 768px) {
+  .contact-inputs button {
+    width: 100%;
+  }
 }
 .contact-inputs button .mail-icon {
   margin-right: 1rem;

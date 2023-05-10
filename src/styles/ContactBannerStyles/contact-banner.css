@@ -8,6 +8,11 @@
   margin: 8rem 0;
   position: relative;
 }
+@media (max-width: 768px) {
+  .contact-banner-section {
+    flex-direction: column;
+  }
+}
 
 .contact-banner-text {
   width: 100%;
@@ -16,16 +21,34 @@
   justify-content: center;
   z-index: 4;
 }
+@media (max-width: 768px) {
+  .contact-banner-text {
+    flex-direction: column;
+  }
+}
 .contact-banner-text p {
   font-size: 2.5rem;
   color: #f3f3f3;
   font-weight: 900;
+}
+@media (max-width: 768px) {
+  .contact-banner-text p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
 }
 .contact-banner-text span {
   font-size: 2.5rem;
   color: #009cff;
   margin-left: 2rem;
   font-weight: 700;
+}
+@media (max-width: 768px) {
+  .contact-banner-text span {
+    font-size: 1.8rem;
+    margin-left: 0;
+  }
 }
 
 .image-overlay {
