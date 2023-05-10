@@ -1,7 +1,7 @@
-.about-background {
+.cars-background {
   width: 100%;
 }
-.about-background .about-image {
+.cars-background .cars-image {
   position: absolute;
   top: 0;
   right: 0;
@@ -10,27 +10,31 @@
   height: 23rem;
   opacity: 0.1;
 }
-.about-background .about-nav-text {
+.cars-background .cars-nav-text {
   margin-left: 3rem;
   margin-top: 4rem;
   position: relative;
   z-index: 3;
 }
-.about-background .about-nav-text h1 {
+.cars-background .cars-nav-text a {
+  color: #010103;
+  text-decoration: none;
+}
+.cars-background .cars-nav-text h1 {
   font-size: 3rem;
   font-weight: 900;
   margin-bottom: 1rem;
 }
-.about-background .about-nav-text p {
+.cars-background .cars-nav-text p {
   display: inline-block;
   font-weight: 700;
 }
-.about-background .about-nav-text p:hover {
+.cars-background .cars-nav-text p:hover {
   color: #009cff;
   transition: all 0.4s ease;
   cursor: pointer;
 }
-.about-background .about-nav-text span {
+.cars-background .cars-nav-text span {
   font-weight: 700;
 }
 

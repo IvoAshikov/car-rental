@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/AboutStyles/about.css";
 import ContactBanner from "./ContactBanner";
 import Footer from "./Footer";
@@ -11,7 +12,9 @@ function AboutSection() {
           <img src={require("../images/about-background.jpg")} className="about-image" />
           <div className="about-nav-text">
             <h1>About</h1>
-            <p className="back-home">Home</p>
+            <Link to="/">
+              <p className="back-home">Home</p>
+            </Link>
             <span> / </span>
             <span>About</span>
           </div>

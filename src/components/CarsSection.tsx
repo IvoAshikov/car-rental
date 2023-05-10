@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/CarsStyles/cars.css";
 import CarCard from "./CarCard";
 import { CAR_DATA } from "./CarData";
@@ -8,11 +9,13 @@ function CarsSection() {
   return (
     <>
       <section className="cars-section">
-        <div className="about-background">
-          <img src={require("../images/about-background.jpg")} className="about-image" />
-          <div className="about-nav-text">
+        <div className="cars-background">
+          <img src={require("../images/about-background.jpg")} className="cars-image" />
+          <div className="cars-nav-text">
             <h1>Available Cars</h1>
-            <p className="back-home">Home</p>
+            <Link to="/">
+              <p className="back-home">Home</p>
+            </Link>
             <span> / </span>
             <span>Available Cars</span>
           </div>

@@ -41,6 +41,7 @@
   button {
     @include mixin.button-style(vars.$logo-color, vars.$white-font-color, vars.$button-hover-color);
     margin: 0.5rem 0;
+    width: 100%;
   }
 }
 

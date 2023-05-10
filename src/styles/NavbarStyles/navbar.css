@@ -37,6 +37,10 @@ nav .logo-container img {
   color: #009cff;
   transition: all 0.3s ease;
 }
+.pages-container a {
+  color: #010103;
+  text-decoration: none;
+}
 
 .account-container {
   display: flex;

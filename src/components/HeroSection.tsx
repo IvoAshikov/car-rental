@@ -1,5 +1,13 @@
 import "../styles/HeroStyles/hero.css";
+import { Link, useLocation } from "react-router-dom";
+import { useLayoutEffect } from "react";
+
 function HeroSection() {
+  const location = useLocation();
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
   return (
     <>
       <section className="hero-section" id="hero">
@@ -13,8 +21,12 @@ function HeroSection() {
             customer service.
           </p>
           <div className="hero-button-container">
-            <button className="hero-book">Book a Ride</button>
-            <button className="hero-about">More About Us</button>
+            <a href="#booking">
+              <button className="hero-book">Book a Ride</button>
+            </a>
+            <Link to="/about">
+              <button className="hero-about">More About Us</button>
+            </Link>
           </div>
         </div>
         <div className="hero-pic-container">

@@ -42,6 +42,10 @@ nav {
       }
     }
   }
+  a {
+    color: vars.$default-font-color;
+    text-decoration: none;
+  }
 }
 
 .account-container {

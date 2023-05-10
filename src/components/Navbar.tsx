@@ -1,4 +1,5 @@
 import "../styles/NavbarStyles/navbar.css";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -10,10 +11,18 @@ function Navbar() {
           </div>
           <div className="pages-container">
             <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Available Cars</li>
-              <li>Contact</li>
+              <Link to="/">
+                <li>Home</li>
+              </Link>
+              <Link to="/about">
+                <li>About</li>
+              </Link>
+              <Link to="/cars">
+                <li>Available Cars</li>
+              </Link>
+              <Link to="/contact">
+                <li>Contact</li>
+              </Link>
             </ul>
           </div>
           <div className="account-container">

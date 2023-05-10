@@ -1,6 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../styles/CarCardStyles/car-card.css";
 import { faCar, faDoorOpen, faGasPump, faMapPin } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
 interface CarData {
   name: string;
@@ -55,7 +56,9 @@ function CarCard({ carData }: CarStats) {
               <FontAwesomeIcon icon={faGasPump} className="car-icon-two" />
             </p>
           </div>
-          <button>Book A Ride</button>
+          <Link to="/" className="link">
+            <button>Book A Ride</button>
+          </Link>
         </div>
       </div>
     </>

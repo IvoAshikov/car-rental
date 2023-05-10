@@ -20,6 +20,10 @@
     margin-top: 4rem;
     position: relative;
     z-index: 3;
+    a {
+      color: vars.$default-font-color;
+      text-decoration: none;
+    }
     h1 {
       font-size: 3rem;
       font-weight: 900;

@@ -1,8 +1,8 @@
 import "../styles/ChooseUsStyles/choose.css";
-
 import CarBuilding from "../images/car-building.png";
 import AllInclusive from "../images/all-inclusive.png";
 import NoHiddenFees from "../images/no-hidden-fees.png";
+import { Link } from "react-router-dom";
 
 function ChooseUsSection() {
   return (
@@ -19,7 +19,9 @@ function ChooseUsSection() {
               Expect a hassle-free and enjoyable experience. We offer a wide variety of top-quality rental vehicles that are regularly maintained and kept in pristine condition. We're committed to
               providing excellent customer service and support, which is why our team is available 24/7 to answer your questions and provide roadside assistance if needed.
             </p>
-            <button>Find Details</button>
+            <Link to="/cars">
+              <button>Find Details</button>
+            </Link>
           </div>
           <div className="pros-container">
             <div className="choose-part-container">

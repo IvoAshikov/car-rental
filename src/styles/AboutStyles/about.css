@@ -20,6 +20,10 @@
   position: relative;
   z-index: 3;
 }
+.about-background .about-nav-text a {
+  color: #010103;
+  text-decoration: none;
+}
 .about-background .about-nav-text h1 {
   font-size: 3rem;
   font-weight: 900;

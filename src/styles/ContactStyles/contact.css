@@ -1,0 +1,146 @@
+.contact-background {
+  width: 100%;
+}
+.contact-background .contact-image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  opacity: 1;
+  width: 100%;
+  height: 23rem;
+  opacity: 0.1;
+}
+.contact-background .contact-nav-text {
+  margin-left: 3rem;
+  margin-top: 4rem;
+  position: relative;
+  z-index: 3;
+}
+.contact-background .contact-nav-text a {
+  color: #010103;
+  text-decoration: none;
+}
+.contact-background .contact-nav-text h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+.contact-background .contact-nav-text p {
+  display: inline-block;
+  font-weight: 700;
+}
+.contact-background .contact-nav-text p:hover {
+  color: #009cff;
+  transition: all 0.4s ease;
+  cursor: pointer;
+}
+.contact-background .contact-nav-text span {
+  font-weight: 700;
+}
+
+.contact-container {
+  margin-top: 15rem;
+  width: 100%;
+  background: url("../../images/world-map.png");
+  background-size: cover;
+  padding: 0 3rem;
+  display: flex;
+}
+
+.contact-text {
+  width: 50%;
+}
+.contact-text h1 {
+  font-size: 4rem;
+}
+.contact-text p {
+  font-size: 1.3rem;
+  color: #706f7b;
+  margin: 2rem 0;
+}
+.contact-text .contact-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.contact-text .contact-options span {
+  font-size: 1.2rem;
+}
+.contact-text .contact-options span:hover {
+  color: #009cff;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.contact-text .contact-options .contact-icon {
+  margin-right: 1rem;
+}
+.contact-text .helper-container {
+  width: 30rem;
+  max-width: 30rem;
+}
+
+.contact-inputs {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+}
+.contact-inputs form {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  max-width: 30rem;
+}
+.contact-inputs input {
+  outline: none;
+  padding: 1rem 2rem;
+  background-color: #d6d6d6;
+  font-size: 1.2rem;
+  border: none;
+  width: 25rem;
+  margin-bottom: 2.5rem;
+}
+.contact-inputs label {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+.contact-inputs label span {
+  color: #009cff;
+  margin-left: 0.3rem;
+}
+.contact-inputs textarea {
+  background-color: #d6d6d6;
+  resize: none;
+  width: 25rem;
+  height: 8rem;
+  margin-bottom: 2.5rem;
+  font-size: 1.2rem;
+  border: none;
+  outline: none;
+  padding: 1rem 2rem;
+}
+.contact-inputs .helper-container {
+  margin-left: auto;
+}
+.contact-inputs button {
+  box-shadow: 0 10px 15px 0 #009cff;
+  background-color: #009cff;
+  color: #f3f3f3;
+  border: 2px solid transparent;
+  padding: 1rem 2rem;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 25rem;
+  max-width: 25rem;
+  font-size: 1.4rem;
+}
+.contact-inputs button:hover {
+  background-color: #0288db;
+  box-shadow: 0 10px 15px 0 #0288db;
+  transition: all 1s ease;
+}
+.contact-inputs button .mail-icon {
+  margin-right: 1rem;
+}
