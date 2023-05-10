@@ -1,0 +1,49 @@
+footer {
+  background-color: #dfdfdf;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5rem;
+  padding: 2rem 4rem;
+}
+
+.logo-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo-container img {
+  width: 200px;
+  cursor: pointer;
+}
+
+.footer-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-center h2 {
+  line-height: 25px;
+  font-size: 1.5rem;
+}
+.footer-center .phone,
+.footer-center .email {
+  font-size: 1.2rem;
+}
+.footer-center .phone:hover,
+.footer-center .email:hover {
+  color: #009cff;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-right p {
+  font-size: 1.1rem;
+}
