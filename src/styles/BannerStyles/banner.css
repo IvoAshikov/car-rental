@@ -1,0 +1,24 @@
+.banner-section {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  background-color: #2d2d2d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 3rem;
+}
+.banner-section h1 {
+  color: #f3f3f3;
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+.banner-section p {
+  color: #f3f3f3;
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+}
+.banner-section p span {
+  color: #009cff;
+  font-weight: 500;
+}

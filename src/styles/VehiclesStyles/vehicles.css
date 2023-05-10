@@ -89,13 +89,3 @@
   background-color: #009cff;
   color: #f3f3f3;
 }
-
-.car-picture-container {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.car-picture-container img {
-  width: 100%;
-}

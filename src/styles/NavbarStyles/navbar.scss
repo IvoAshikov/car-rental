@@ -46,9 +46,9 @@ nav {
   z-index: 3;
 
   .register {
-    @include mixin.button-style(vars.$logo-color, vars.$white-font-color);
+    @include mixin.button-style(vars.$logo-color, vars.$white-font-color, vars.$button-hover-color);
   }
   .sign-in {
-    @include mixin.button-style(transparent, vars.$default-font-color);
+    @include mixin.button-style(transparent, vars.$default-font-color, transparent);
   }
 }

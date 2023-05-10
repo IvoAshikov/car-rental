@@ -50,6 +50,11 @@ nav .logo-container img {
   font-size: 1.1rem;
   cursor: pointer;
 }
+.account-container .register:hover {
+  background-color: #0288db;
+  box-shadow: 0 10px 15px 0 #0288db;
+  transition: all 1s ease;
+}
 .account-container .sign-in {
   box-shadow: 0 10px 15px 0 transparent;
   background-color: transparent;
@@ -60,4 +65,9 @@ nav .logo-container img {
   border-radius: 5px;
   font-size: 1.1rem;
   cursor: pointer;
+}
+.account-container .sign-in:hover {
+  background-color: transparent;
+  box-shadow: 0 10px 15px 0 transparent;
+  transition: all 1s ease;
 }

@@ -1,0 +1,82 @@
+@use "../global/variables" as vars;
+@use "../global/mixins" as mixin;
+
+.choose-section {
+  width: 100%;
+  padding: 2rem 8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.choose-img-container {
+  width: 100%;
+  img {
+    width: 100%;
+  }
+}
+
+.choose-container {
+  width: 100%;
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-between;
+  .choose-text {
+    width: 50%;
+    h3 {
+      font-size: 1.8rem;
+    }
+    h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+    p {
+      color: vars.$description-font-color;
+      margin-bottom: 2rem;
+      text-align: left;
+    }
+    button {
+      @include mixin.button-style(vars.$logo-color, vars.$white-font-color, vars.$button-hover-color);
+    }
+  }
+}
+
+.pros-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.choose-part-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  .round-background {
+    background-color: vars.$logo-color;
+    border-radius: 100%;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .choose-icon {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  .choose-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    gap: 0.5rem;
+    h2 {
+      font-size: 1.6rem;
+    }
+    p {
+      color: vars.$description-font-color;
+    }
+  }
+}

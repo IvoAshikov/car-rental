@@ -51,12 +51,11 @@
   gap: 4rem;
   margin-top: 2rem;
   .hero-book {
-    @include mixin.button-style(vars.$logo-color, vars.$white-font-color);
+    @include mixin.button-style(vars.$logo-color, vars.$white-font-color, vars.$button-hover-color);
   }
   .hero-about {
-    @include mixin.button-style(vars.$default-font-color, vars.$white-font-color);
+    @include mixin.button-style(vars.$default-font-color, vars.$white-font-color, vars.$white-font-color);
     &:hover {
-      background-color: vars.$white-font-color;
       color: vars.$default-font-color;
       border: 2px solid black;
     }

@@ -1,4 +1,4 @@
-@mixin button-style($background-color, $text-color) {
+@mixin button-style($background-color, $text-color, $hover-background) {
   box-shadow: 0 10px 15px 0 $background-color;
   background-color: $background-color;
   color: $text-color;
@@ -8,6 +8,11 @@
   border-radius: 5px;
   font-size: 1.1rem;
   cursor: pointer;
+  &:hover {
+    background-color: $hover-background;
+    box-shadow: 0 10px 15px 0 $hover-background;
+    transition: all 1s ease;
+  }
 }
 
 @mixin car-button() {

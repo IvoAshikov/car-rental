@@ -1,4 +1,4 @@
-import Mercedes from "../images/hero-background.jpg";
+import Mercedes from "../images/hero-picture.png";
 import BMW from "../images/bmw.png";
 import Golf from "../images/golf7.png";
 import Astra from "../images/astra.png";
@@ -9,7 +9,22 @@ import TRoc from "../images/troc.png";
 import Touareg from "../images/touareg.png";
 import Tucson from "../images/tucson.png";
 
-export const CAR_DATA = [
+interface CarData {
+  name: string;
+  make: string;
+  model: string;
+  year: string;
+  doors: string;
+  coupe: string;
+  engine: string;
+  transmission: string;
+  horsepower: string;
+  consumption: string;
+  price: string;
+  image: any;
+}
+
+export const CAR_DATA: CarData[] = [
   {
     name: "Mercedes E200",
     make: "Mercedes",
@@ -21,6 +36,7 @@ export const CAR_DATA = [
     transmission: "Automatic",
     horsepower: "197",
     consumption: "6.9l/100km",
+    price: "70",
     image: Mercedes,
   },
   {
@@ -34,6 +50,7 @@ export const CAR_DATA = [
     transmission: "Automatic",
     horsepower: "231",
     consumption: "4.8l/100km",
+    price: "60",
     image: BMW,
   },
   {
@@ -47,6 +64,7 @@ export const CAR_DATA = [
     transmission: "Manual",
     horsepower: "184",
     consumption: "4.7l/100km",
+    price: "55",
     image: Golf,
   },
   {
@@ -60,6 +78,7 @@ export const CAR_DATA = [
     transmission: "Automatic",
     horsepower: "130",
     consumption: "5.0l/100km",
+    price: "60",
     image: Astra,
   },
   {
@@ -74,6 +93,7 @@ export const CAR_DATA = [
     horsepower: "150",
     consumption: "4.2l/100km",
     image: Audi,
+    price: "55",
   },
   {
     name: "Kia Ceed",
@@ -87,6 +107,7 @@ export const CAR_DATA = [
     horsepower: "136",
     consumption: "3.8l/100km",
     image: Kia,
+    price: "30",
   },
   {
     name: "Citroen C3",
@@ -100,6 +121,7 @@ export const CAR_DATA = [
     horsepower: "120",
     consumption: "4.1l/100km",
     image: C3,
+    price: "40",
   },
   {
     name: "VW T-Roc",
@@ -113,6 +135,7 @@ export const CAR_DATA = [
     horsepower: "110",
     consumption: "5.1l/100km",
     image: TRoc,
+    price: "70",
   },
   {
     name: "VW Touareg",
@@ -126,6 +149,7 @@ export const CAR_DATA = [
     horsepower: "245",
     consumption: "7.2l/100km",
     image: Touareg,
+    price: "45",
   },
   {
     name: "Hyundai Tucson",
@@ -138,6 +162,7 @@ export const CAR_DATA = [
     transmission: "Automatic",
     horsepower: "177",
     consumption: "7.6l/100km",
+    price: "55",
     image: Tucson,
   },
 ];

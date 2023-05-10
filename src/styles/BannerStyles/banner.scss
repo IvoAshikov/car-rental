@@ -1,0 +1,26 @@
+@use "../global/variables" as vars;
+
+.banner-section {
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+  background-color: vars.$banner-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 3rem;
+  h1 {
+    color: vars.$white-font-color;
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+  p {
+    color: vars.$white-font-color;
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    span {
+      color: vars.$logo-color;
+      font-weight: 500;
+    }
+  }
+}

@@ -59,6 +59,11 @@
   font-size: 1.1rem;
   cursor: pointer;
 }
+.hero-button-container .hero-book:hover {
+  background-color: #0288db;
+  box-shadow: 0 10px 15px 0 #0288db;
+  transition: all 1s ease;
+}
 .hero-button-container .hero-about {
   box-shadow: 0 10px 15px 0 #010103;
   background-color: #010103;
@@ -72,6 +77,10 @@
 }
 .hero-button-container .hero-about:hover {
   background-color: #f3f3f3;
+  box-shadow: 0 10px 15px 0 #f3f3f3;
+  transition: all 1s ease;
+}
+.hero-button-container .hero-about:hover {
   color: #010103;
   border: 2px solid black;
 }

@@ -1,49 +1,71 @@
 import "../styles/CarStats/carstats.css";
 
-function CarStats() {
+interface CarData {
+  name: string;
+  make: string;
+  model: string;
+  year: string;
+  doors: string;
+  coupe: string;
+  engine: string;
+  transmission: string;
+  horsepower: string;
+  consumption: string;
+  price: string;
+  image: any;
+}
+
+interface CarStats {
+  carData: CarData;
+}
+
+function CarStats({ carData }: CarStats) {
   return (
     <>
+      <div className="car-picture-container">
+        <img src={carData.image} />
+      </div>
       <div className="car-description-container">
         <div className="rent-price">
-          <p>45$ per day</p>
+          <p>{carData.price}$ per day</p>
         </div>
         <table>
           <tbody>
             <tr>
               <td>Make</td>
-              <td>Mercedes</td>
+              <td>{carData.make}</td>
             </tr>
             <tr>
               <td>Model</td>
-              <td>E200</td>
+              <td>{carData.model}</td>
             </tr>
             <tr>
               <td>Year</td>
-              <td>2020</td>
+              <td>{carData.year}</td>
             </tr>
             <tr>
               <td>Doors</td>
-              <td>4/5</td>
+              <td>{carData.doors}</td>
             </tr>
             <tr>
               <td>Coupe</td>
-              <td>Sedan</td>
+              <td>{carData.coupe}</td>
             </tr>
             <tr>
               <td>Engine</td>
-              <td>Gasoline</td>
+              <td>{carData.engine}</td>
             </tr>
             <tr>
               <td>Transmission</td>
-              <td>Automatic</td>
+              <td>{carData.transmission}</td>
             </tr>
             <tr>
               <td>Horsepower</td>
-              <td>197</td>
+              <td>{carData.horsepower}</td>
             </tr>
             <tr>
               <td>Consumption</td>
-              <td>6.9l/100km</td>
+              <td>{carData.consumption}</td>
             </tr>
           </tbody>
         </table>

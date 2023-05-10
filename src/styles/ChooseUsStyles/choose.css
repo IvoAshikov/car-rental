@@ -1,0 +1,92 @@
+.choose-section {
+  width: 100%;
+  padding: 2rem 8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.choose-img-container {
+  width: 100%;
+}
+.choose-img-container img {
+  width: 100%;
+}
+
+.choose-container {
+  width: 100%;
+  margin-top: 7rem;
+  display: flex;
+  justify-content: space-between;
+}
+.choose-container .choose-text {
+  width: 50%;
+}
+.choose-container .choose-text h3 {
+  font-size: 1.8rem;
+}
+.choose-container .choose-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+.choose-container .choose-text p {
+  color: #706f7b;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+.choose-container .choose-text button {
+  box-shadow: 0 10px 15px 0 #009cff;
+  background-color: #009cff;
+  color: #f3f3f3;
+  border: 2px solid transparent;
+  padding: 1rem 2rem;
+  font-weight: 500;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.choose-container .choose-text button:hover {
+  background-color: #0288db;
+  box-shadow: 0 10px 15px 0 #0288db;
+  transition: all 1s ease;
+}
+
+.pros-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.choose-part-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+}
+.choose-part-container .round-background {
+  background-color: #009cff;
+  border-radius: 100%;
+  width: 90px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.choose-part-container .round-background .choose-icon {
+  width: 50px;
+  height: 50px;
+}
+.choose-part-container .choose-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+  gap: 0.5rem;
+}
+.choose-part-container .choose-text-container h2 {
+  font-size: 1.6rem;
+}
+.choose-part-container .choose-text-container p {
+  color: #706f7b;
+}
