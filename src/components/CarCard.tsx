@@ -2,22 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../styles/CarCardStyles/car-card.css";
 import { faCar, faDoorOpen, faGasPump, faMapPin } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
-
-interface CarData {
-  name: string;
-  make: string;
-  model: string;
-  year: string;
-  doors: string;
-  coupe: string;
-  engine: string;
-  transmission: string;
-  horsepower: string;
-  consumption: string;
-  price: number;
-  image: any;
-  imageNEW: any;
-}
+import { CarData } from "./CarData";
 
 interface CarStats {
   carData: CarData;

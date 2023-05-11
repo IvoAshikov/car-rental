@@ -19,7 +19,7 @@ import TRocNEW from "../images/car-troc.png";
 import TouaregNEW from "../images/car-touareg.jpg";
 import TucsonNEW from "../images/car-tucson.jpg";
 
-interface CarData {
+export interface CarData {
   name: string;
   make: string;
   model: string;
